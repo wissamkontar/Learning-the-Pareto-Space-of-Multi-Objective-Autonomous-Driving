@@ -14,7 +14,7 @@ Phase II advances the empirical foundations established in earlier work by setti
 
 ### AV Driving Metrics
 Details the preprocessing pipeline used to generate per-timestep AV behavioral metrics. The workflow covers dataset preparation, AV–agent detection through Tesla Vision zones, and the calculation of performance metrics including:
-- Generalized Surrogate Safety Metric (GSSM) following the methodology outlined in Jiao et al. (2025).
+- Generalized Surrogate Safety Metric (GSSM), inspired by Jiao et al. (2025).
 
    [Link to the paper](https://arxiv.org/abs/2505.13556) [Link to the Github repository](https://github.com/Yiru-Jiao/GSSM)
 
