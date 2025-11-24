@@ -4,17 +4,26 @@ This repository contains the code for the paper
 **“Learning the Pareto Space of Multi-Objective Autonomous Driving: A Modular, Data-Driven Approach”**,  
 which initiates **Phase II** of our broader research agenda on consensus-aware autonomous vehicle (AV) behavior.
 
-Phase II advances the empirical foundations established in earlier work by setting up a continuous learning Pareto surface across multiple behavioral objectives—Safety, Efficiency, and Interaction—using a modular per-timestep pipeline built on the Third Generation Simulation (TGSIM) datasets.
+Phase II advances the empirical foundations established in earlier work by setting up a continuous learning Pareto surface across multiple behavioral objectives (Safety, Efficiency, and Interaction) using a modular per-timestep pipeline built on the Third Generation Simulation (TGSIM) datasets.
+
+![Conceptual overview of the overarching framework linking empirical data to learning-based control.](Figures/Flow_Learning.png)
 
 ---
 
 ## Repository Structure
 
 ### AV Driving Metrics
-Contains the full preprocessing workflow for constructing per-timestep AV behavioral metrics:
-- Merges raw per-timestep safety, headway, gain, jerk, and deceleration indicators  
-- Applies threshold-based violation flags  
-- Produces a unified dataset for multi-objective evaluation  
+Details the preprocessing pipeline used to generate per-timestep AV behavioral metrics. The workflow covers dataset preparation, AV–agent detection through Tesla Vision zones, and the calculation of performance metrics including:
+- Generalized Surrogate Safety Metric (GSSM) following the methodology outlined in Jiao et al. (2025).
+
+   [Link to the paper](https://arxiv.org/abs/2505.13556) [Link to the Github repository](https://github.com/Yiru-Jiao/GSSM)
+
+   ![Conceptual overview of the GSSM calculation method.](Figures/Flow_GSSM.png)
+
+- Headway
+- String stability
+- Jerk
+- Deceleration Intensity
 
 (Notebook: [**AV_Metrics_Timesteps.ipynb**](AV_Metrics_Timesteps.ipynb))
 
