@@ -67,9 +67,7 @@ These datasets must be downloaded locally before running the notebooks.
 
 If you use this repository or its methods, please cite:
 
-Elayan, M. & Kontar, W. (2025). *Learning the Pareto Space of Multi-Objective Autonomous Driving: A Modular, Data-Driven Approach.*
-
-Updated citation details will be added once the paper is published.
+M. Elayan and W. Kontar, "*Learning the Pareto Space of Multi-Objective Autonomous Driving: A Modular, Data-Driven Approach*," 2026 IEEE Intelligent Vehicles Symposium (IV), Plymouth, MI, USA, 2026, pp. 1150-1155, doi: 10.1109/IV66570.2026.11624067. 
 
 ---
 
